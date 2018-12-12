@@ -37,21 +37,63 @@
                 </nav>
                 <div class="header-contacts">
                     <adress class="header-contacts__item header-contacts__mail">
-                        <img class="header-contacts__icon header-contacts__mail-icon" src="images/header_icons/mail.png" alt="mail icon">
+                        <svg class="header-contacts__icon header-contacts__mail-icon">
+                            <use xlink:href='#header-mail-svg' />
+                        </svg>
                         <p class="header__mail-text header-contacts__text"><a target="_top" href="mailto:your-mail@gmail.com"></a>your-mail@gmail.com</a></p>
                     </adress>
                     <div class="header-contacts__item header-contacts__phone">
-                        <img class="header-contacts__icon header-contacts__phone-icon" src="images/header_icons/phone.png" alt="phone icon">
+                        <svg class="header-contacts__icon header-contacts__phone-icon">
+                            <use xlink:href='#header-phone-svg' />
+                        </svg>
                         <p class="header-phone__text header-contacts__text"><a href="tel: +79969532147">+7 996 999 33 21</a></p>
                     </div>
                     <map class="header-contacts__item header-contacts__adress">
-                        <img class="header-contacts__icon header-contacts__adress-icon" src="images/header_icons/location.png" alt="location icon">
+                        <svg class="header-contacts__icon header-contacts__adress-icon">
+                            <use xlink:href='#header-adress-svg' />
+                        </svg>
                         <p class="header__adress-text header-contacts__text ymaps-geolink" data-bounds="[[54.314214, 48.402297], [54.314483, 48.402568]]" data-description="Повернись лицом к Ленину"  data-type="biz">Ulyanovsk, Russia</p>
                     </map>
                 </div>
             </div>
+
+            <svg class="form-sprite" style="display:none;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                <svg version="1.1" id="header-mail-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 370.88 370.88" style="enable-background:new 0 0 370.88 370.88;" xml:space="preserve">
+                    <path d="M355.6,66.16H15.28C6.841,66.16,0,73.001,0,81.44v208c0,8.439,6.841,15.28,15.28,15.28H355.6
+                    c8.439,0,15.28-6.841,15.28-15.28v-208C370.88,73.001,364.039,66.16,355.6,66.16z M15.28,78.16H355.6
+                    c1.436,0.007,2.7,0.947,3.12,2.32L185.44,188.72L12.16,80.48C12.58,79.107,13.844,78.167,15.28,78.16z M12,94.16L136.64,172
+                    L12,270.88V94.16z M358.88,289.36c0,1.812-1.469,3.28-3.28,3.28H15.28c-1.811,0-3.28-1.469-3.28-3.28v-3.2l135.44-107.04
+                    l34.8,21.76c1.955,1.233,4.445,1.233,6.4,0l34.8-21.76l135.44,107.04V289.36z M358.88,270.88l-124.96-98.56l124.96-77.44V270.88z"
+                    />
+                </svg>
+
+                <svg version="1.1" id="header-phone-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <path d="M256,32c123.5,0,224,100.5,224,224S379.5,480,256,480S32,379.5,32,256S132.5,32,256,32 M256,0C114.625,0,0,114.625,0,256
+                    s114.625,256,256,256s256-114.625,256-256S397.375,0,256,0L256,0z M398.719,341.594l-1.438-4.375
+                    c-3.375-10.062-14.5-20.562-24.75-23.375L334.688,303.5c-10.25-2.781-24.875,0.969-32.405,8.5l-13.688,13.688
+                    c-49.75-13.469-88.781-52.5-102.219-102.25l13.688-13.688c7.5-7.5,11.25-22.125,8.469-32.406L198.219,139.5
+                    c-2.781-10.25-13.344-21.375-23.406-24.75l-4.313-1.438c-10.094-3.375-24.5,0.031-32,7.563l-20.5,20.5
+                    c-3.656,3.625-6,14.031-6,14.063c-0.688,65.063,24.813,127.719,70.813,173.75c45.875,45.875,108.313,71.345,173.156,70.781
+                    c0.344,0,11.063-2.281,14.719-5.938l20.5-20.5C398.688,366.062,402.062,351.656,398.719,341.594z"/>
+                </svg>
+
+                <svg version="1.1" id="header-adress-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+                    <path d="M30,26c3.86,0,7-3.141,7-7s-3.14-7-7-7s-7,3.141-7,7S26.14,26,30,26z M30,14c2.757,0,5,2.243,5,5s-2.243,5-5,5
+                        s-5-2.243-5-5S27.243,14,30,14z"/>
+                    <path d="M29.823,54.757L45.164,32.6c5.754-7.671,4.922-20.28-1.781-26.982C39.761,1.995,34.945,0,29.823,0
+                        s-9.938,1.995-13.56,5.617c-6.703,6.702-7.535,19.311-1.804,26.952L29.823,54.757z M17.677,7.031C20.922,3.787,25.235,2,29.823,2
+                        s8.901,1.787,12.146,5.031c6.05,6.049,6.795,17.437,1.573,24.399L29.823,51.243L16.082,31.4
+                        C10.882,24.468,11.628,13.08,17.677,7.031z"/>
+                    <path d="M42.117,43.007c-0.55-0.067-1.046,0.327-1.11,0.876s0.328,1.046,0.876,1.11C52.399,46.231,58,49.567,58,51.5
+                        c0,2.714-10.652,6.5-28,6.5S2,54.214,2,51.5c0-1.933,5.601-5.269,16.117-6.507c0.548-0.064,0.94-0.562,0.876-1.11
+                        c-0.065-0.549-0.561-0.945-1.11-0.876C7.354,44.247,0,47.739,0,51.5C0,55.724,10.305,60,30,60s30-4.276,30-8.5
+                        C60,47.739,52.646,44.247,42.117,43.007z"/>
+                </svg>
+            </svg>
         </header>
+        <!--When using, move this script to the bottom of the page-->
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=Geolink"></script>
-       <!-- End of Header template-->
+        <!-- End of Header template-->
     </body>
 </html>
