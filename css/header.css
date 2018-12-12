@@ -5,6 +5,9 @@
     --font-color-hover: #FFF;
     --wrap-back-color: #315022;
 
+    --icon-color: #F2F2F2;
+    --icon-color-hover: #E31D13;
+
     --font-family-header: "Open Sans", sans-serif;
     --font-size-menu: 14px;
     --font-size-contacts: 14px;
@@ -111,27 +114,54 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 5px 0;
+    padding: 6px 0;
     font-size: var(--font-size-contacts);
-    color: var(--font-color);
 }
 
 .header-contacts__item:hover {
-    color: var(--font-color-hover);
+    color: var(--font-color-hover);   
 }
 
 .header-contacts__item .header-contacts__text {
     margin: 0;
 }
 
-.header-contacts__icon {
-    width: 1.4rem;
-    height: 1.5rem;
-    margin-right: 12px;
+
+
+
+.header-contacts__item .header-contacts__item-href {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
-.header-contacts__adress .ymaps-2-1-71-geolink-processed:before {
+.header-contacts__text {
+    color: var(--font-color);
+    border-bottom: 1px dashed var(--font-color);
+    text-decoration: none;
+}
+
+.header-contacts__item:hover .header-contacts__text {
+    border-bottom: 1px dashed transparent;
+}
+
+.header-contacts__icon {
+    width: 1.3rem;
+    height: 1.4rem;
+    margin-right: 12px;
+    fill: var(--icon-color);
+}
+
+.header-contacts__item:hover .header-contacts__icon {
+    fill: var(--icon-color-hover);
+}
+
+.header .ymaps-2-1-71-geolink-processed:before {
     display: none;
+}
+
+.header .ymaps-2-1-71-geolink-processed:after {
+    border-bottom: none;
 }
 
 .header .ymaps-2-1-71-ymaps-geolink-dark:hover,
@@ -139,15 +169,8 @@
     color: var(--font-color-hover);
 }
 
-.header-phone__text a {
-    color: var(--font-color);
-    text-decoration: none;
-    border-bottom: 1px dashed;
-}
-
-.header-phone__text a:hover {
-    color: var(--font-color-hover);
-    border-bottom: none;
+.header .ymaps-2-1-71-id-0 {
+    margin-left: 0;
 }
 
 @media (max-width: 990px) {
