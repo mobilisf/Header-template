@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Header Template</title>
-    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <!- - [if IE]>
+    <link rel="stylesheet" href="css/header-ie.css" />
+    <![endif]- ->
+    <link rel="stylesheet" href="css/header.css" media=" 
+    only print,
+    only all and (-ms-high-contrast: none), only all and (-ms-high-contrast: active),
+    only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none),
+    only all and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0),
+    only all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm)
+    ">
 </head>
     <body>
         <!-- Header template start -->
